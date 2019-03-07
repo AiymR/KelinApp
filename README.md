@@ -1,3 +1,14 @@
+
+##REQUIREMENTS  
+
+install semantic-ui css framework
+### ` yarn add semantic-ui-react`
+
+install fontswesome package to use icons
+###  `npm i --save @fortawesome/fontawesome-svg-core \`
+###  `npm i --save @fortawesome/free-solid-svg-icons \`
+###  `npm i --save @fortawesome/react-fontawesome`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

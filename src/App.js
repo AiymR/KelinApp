@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+import AppRouter from "./AppRouter/AppRouter";
+
+library.add(faIgloo)
+
+
 
 const App = () => {
   return(
@@ -14,6 +20,7 @@ const App = () => {
             <li>react</li>
           </ul>
         </div>
+          <AppRouter/>
       </div>
   );
 }
