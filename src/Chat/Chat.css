@@ -1,0 +1,16 @@
+.chat-page{
+  display: flex;
+  justify-content: center;
+  background-color: #51CC89;
+}
+.chat-frame {
+  width: 80%;
+  height: 90vh;
+  background-color: white;
+}
+.left {
+  width: 30%;
+  height: 90vh;
+  background-color: black;
+
+}
