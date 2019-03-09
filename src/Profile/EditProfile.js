@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import './EditProfile.css';
+import Profile from "./Profile";
 import { Button,Form } from 'semantic-ui-react'
 import photo from './profile.jpg';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -8,8 +10,20 @@ import { faGraduationCap,faHorse,faHeart ,faPalette} from '@fortawesome/free-sol
 library.add(faGraduationCap,faHorse,faHeart,faPalette);
 
 
-
-class Profile extends Component {
+class EditProfile extends Component {
+  state = {
+    redirect: false
+  }
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/Profile/' />
+    }
+  }
   render() {
   return(
         <div className="profile-page">
@@ -44,7 +58,8 @@ class Profile extends Component {
                      <label><FontAwesomeIcon icon="horse" /> Приданое и калым:</label>
                      <input value='Очень много всего' />
                  </Form.Field>
-                <Button type='submit'>Сохранить</Button>
+                 {this.renderRedirect()}
+                <Button onClick={this.setRedirect} type='submit'>Сохранить</Button>
                 </Form>
               </div>
             </div>
@@ -53,4 +68,4 @@ class Profile extends Component {
 }
 }
 
-export default Profile;
+export default EditProfile;

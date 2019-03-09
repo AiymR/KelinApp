@@ -62,7 +62,7 @@ you blind bitch</span>
 
             </div>
               <div  className="write">
-              <Input fluid icon='search' placeholder='Search...' />
+              <Input fluid icon='write' placeholder='Напиши мне сообщение...' />
               </div>
           </div>
         </div>
