@@ -1,6 +1,9 @@
 
 ##REQUIREMENTS  
 
+install carousel model
+### ` npm i -S pure-react-carousel`
+
 install semantic-ui css framework
 ### ` yarn add semantic-ui-react`
 

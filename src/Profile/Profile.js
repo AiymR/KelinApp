@@ -53,4 +53,10 @@ class Profile extends Component {
 }
 }
 
-export default Profile;
+function profileRoute() {
+    return(
+        <Profile/>
+    )
+}
+
+export default profileRoute;
