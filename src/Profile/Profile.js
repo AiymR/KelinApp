@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import EditProfile from "./EditProfile";
 import './Profile.css';
 import { Button } from 'semantic-ui-react'
 import photo from './profile.jpg';
@@ -10,6 +13,20 @@ library.add(faGraduationCap,faHorse,faHeart,faPalette);
 
 
 class Profile extends Component {
+  state = {
+    redirect: false
+  }
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/EditProfile/' />
+    }
+  }
+
   render() {
   return(
         <div className="profile-page">
@@ -42,9 +59,8 @@ class Profile extends Component {
                 </div>
 
                 <div className='edit-button'>
-
- <Button color='yellow'>Edit profile</Button>
-
+                {this.renderRedirect()}
+                <Button onClick={this.setRedirect} color='yellow'>Edit profile</Button>
                 </div>
               </div>
             </div>
