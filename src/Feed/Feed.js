@@ -33,9 +33,6 @@ function Feed() {
         <div className="feed">
             <Header/>
             <div className="feedContent">
-                <div className="feedLeft">
-                    <Menu/>
-                </div>
                 <div className="feedRight">
                     <InfoCard/>
                 </div>

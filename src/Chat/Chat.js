@@ -71,4 +71,10 @@ you blind bitch</span>
 }
 }
 
-export default Chat;
+function chatRoute() {
+    return(
+        <Chat/>
+    )
+}
+
+export default chatRoute;
