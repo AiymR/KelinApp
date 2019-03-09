@@ -10,25 +10,19 @@ import { faGraduationCap,faHorse,faHeart ,faPalette} from '@fortawesome/free-sol
 library.add(faGraduationCap,faHorse,faHeart,faPalette);
 
 
-<<<<<<< HEAD
 class EditProfile extends Component {
-  state = {
-    redirect: false
-  }
-  setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  }
-  renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='/Profile/' />
+    state = {
+        redirect: false
     }
-  }
-=======
-
-class EditProfile extends Component {
->>>>>>> be41ba155b2278cf25e92edd57873ab93b39e6e2
+    setRedirect = () => {
+        this.setState({
+            redirect: true
+        })
+    }
+    renderRedirect = () => {
+        if (this.state.redirect) {
+            return <Redirect to='/Profile/' />
+        }
   render() {
   return(
         <div className="profile-page">

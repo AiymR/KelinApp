@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6b676e69-bbfc-4926-ba2b-d2cef16e6904" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Feed/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profile/EditP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profile/EditProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile/EditProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile0.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile0.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,15 +40,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Feed/Feed.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-24">
@@ -79,8 +66,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Profile/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="419">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Profile/EditProfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -100,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Feed/Menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-end-line="93" />
+            <state relative-caret-position="-645">
+              <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -166,15 +165,15 @@
         <option value="$PROJECT_DIR$/src/Feed/Feed.css" />
         <option value="$PROJECT_DIR$/src/Feed/PhotoSlider.js" />
         <option value="$PROJECT_DIR$/src/Feed/Feed.js" />
-        <option value="$PROJECT_DIR$/src/Profile/EditProfile.js" />
         <option value="$PROJECT_DIR$/src/Profile0.js" />
         <option value="$PROJECT_DIR$/src/Profile/package.json" />
         <option value="$PROJECT_DIR$/src/Signup/Signup.js" />
         <option value="$PROJECT_DIR$/src/Chat/Chat.js" />
-        <option value="$PROJECT_DIR$/src/Profile/Profile.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Feed/Menu.js" />
+        <option value="$PROJECT_DIR$/src/Profile/Profile.js" />
+        <option value="$PROJECT_DIR$/src/Profile/EditProfile.js" />
       </list>
     </option>
   </component>
@@ -303,12 +302,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551822352508</updated>
       <workItem from="1551822353985" duration="14439000" />
-      <workItem from="1551975306929" duration="41361000" />
+      <workItem from="1551975306929" duration="41687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55800000" />
+    <option name="totallyTimeSpent" value="56126000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1400" height="767" extended-state="0" />
@@ -436,16 +435,6 @@
     <entry file="file://$PROJECT_DIR$/src/Profile/Profile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-477" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Profile/EditProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Feed/Header.js">
@@ -582,16 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Profile/Profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -604,8 +583,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Feed/Menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-end-line="93" />
+        <state relative-caret-position="-645">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Profile/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Profile/EditProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

@@ -8,6 +8,7 @@ import photo from './profile.jpg';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap,faHorse,faHeart ,faPalette} from '@fortawesome/free-solid-svg-icons'
+import Redirect from "react-router-dom/es/Redirect";
 library.add(faGraduationCap,faHorse,faHeart,faPalette);
 
 
