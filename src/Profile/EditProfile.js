@@ -21,8 +21,9 @@ class EditProfile extends Component {
     }
     renderRedirect = () => {
         if (this.state.redirect) {
-            return <Redirect to='/Profile/' />
+            return <Redirect to='/Profile/'/>
         }
+    }
   render() {
   return(
         <div className="profile-page">

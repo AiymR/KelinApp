@@ -26,7 +26,7 @@ class Profile extends Component {
     if (this.state.redirect) {
       return <Redirect to='/EditProfile/' />
     }
-  }
+  };
 
   render() {
   return(
