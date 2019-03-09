@@ -13,7 +13,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faTasks } from '@fortawesome/free-solid-svg-icons'
 
-// import Feed from './Feed'
+import Feed from './Feed'
 import profileRoute from '../Profile/Profile'
 // import chatRoute from '../Chat/Chat'
 
@@ -31,6 +31,7 @@ function Menu() {
     return(
         <Router>
             <div className='menu'>
+
                 <ul className='fa-ul'>
                     <li>
                         <Link to='/profile/'>
@@ -49,7 +50,7 @@ function Menu() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='#'>
+                        <Link to='/'>
                             <span className="fa-li">
                                 <FontAwesomeIcon icon='dove' />
                             </span>
@@ -89,8 +90,11 @@ function Menu() {
                         </Link>
                     </li>
                 </ul>
-                {/*<Route path="/" exact component={Feed} />*/}
-                <Route path="/profile/" component={profileRoute} />
+
+                <div>
+                    <Route path="/" exact component={Feed} />
+                    <Route path="/profile/" component={profileRoute} />
+                </div>
             </div>
         </Router>
 

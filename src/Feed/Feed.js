@@ -31,7 +31,6 @@ library.add(faComments,
 function Feed() {
     return (
         <div className="feed">
-            <Header/>
             <div className="feedContent">
                 <div className="feedRight">
                     <InfoCard/>
