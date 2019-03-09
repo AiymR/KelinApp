@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import './Feed'
-import Menu from './Menu'
-
-
-import { Icon } from 'semantic-ui-react'
-
+import './Feed.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,6 +10,11 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faTasks } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
+
+import Menu from './Menu'
+import Header from "./Header";
+import PhotoSlider from "./PhotoSlider";
+import InfoCard from "./InfoCard";
 
 
 library.add(faComments,
@@ -31,8 +31,20 @@ library.add(faComments,
 function Feed() {
     return (
         <div className="feed">
-            bla
-            <Menu/>
+            <Header/>
+            <div className="feedContent">
+                <div className="feedLeft">
+                    <Menu/>
+                </div>
+                <div className="feedRight">
+                    <InfoCard/>
+                </div>
+                <div className='feedCenter'>
+                    <PhotoSlider/>
+                </div>
+
+            </div>
+
         </div>
         );
 }

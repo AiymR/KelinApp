@@ -1,3 +1,21 @@
 .menu{
 
 }
+.feedContent{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.feedLeft{
+    float: left;
+    margin-top: 30px;
+}
+.feedRight{
+    float: right;
+    margin-top: 50px;
+}
+.feedCenter{
+    text-align: left;
+    margin: 50px auto;
+    display: inline-block;
+}
