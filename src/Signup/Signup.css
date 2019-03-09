@@ -1,0 +1,21 @@
+
+.signForm{
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+}
+.btnwrapper{
+    display: inline-block;
+}
+.btnSign{
+    height: 50px;
+}
+.inputSign{
+    width: 380px;
+    margin-bottom: 30px;
+}
+
+.signupFormContent{
+    margin-top: 20px;
+}

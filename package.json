@@ -9,6 +9,7 @@
     "font-awesome": "^4.7.0",
     "i": "^0.3.6",
     "npm": "^6.9.0",
+    "pure-react-carousel": "^1.19.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",

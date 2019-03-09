@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo } from '@fortawesome/free-solid-svg-icons'
-import AppRouter from "./AppRouter/AppRouter";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import Feed from "./Feed/Feed";
+import Chat from "./Chat/Chat";
+import Profile from "./Profile/Profile";
 
 library.add(faIgloo)
 
@@ -11,16 +14,10 @@ library.add(faIgloo)
 const App = () => {
   return(
       <div>
-        <div>one div</div>
-        <div className="app">
-          <ul>
-            <li>css</li>
-            <li>html</li>
-            <li>js</li>
-            <li>react</li>
-          </ul>
-        </div>
-          <AppRouter/>
+          <Feed/>
+          <Route path="/feed/" component={Feed} />
+          <Route path="/chat/" component={Chat} />
+          <Route path="/profile/" component={Profile} />
       </div>
   );
 }

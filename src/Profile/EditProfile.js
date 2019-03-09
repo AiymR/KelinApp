@@ -9,7 +9,7 @@ library.add(faGraduationCap,faHorse,faHeart,faPalette);
 
 
 
-class Profile extends Component {
+class EditProfile extends Component {
   render() {
   return(
         <div className="profile-page">
@@ -53,4 +53,4 @@ class Profile extends Component {
 }
 }
 
-export default Profile;
+export default EditProfile;
