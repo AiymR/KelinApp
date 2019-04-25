@@ -15,7 +15,7 @@ import { faTasks } from '@fortawesome/free-solid-svg-icons'
 
 import Feed from './Feed'
 import profileRoute from '../Profile/Profile'
-// import chatRoute from '../Chat/Chat'
+import chatRoute from '../Chat/Chat'
 
 
 library.add(faComments,
@@ -42,7 +42,7 @@ function Menu() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='#'>
+                        <Link to='/chats/'>
                             <span className="fa-li">
                                 <FontAwesomeIcon icon='comments' />
                             </span>
@@ -94,6 +94,7 @@ function Menu() {
                 <div>
                     <Route path="/" exact component={Feed} />
                     <Route path="/profile/" component={profileRoute} />
+                    <Route path="/chats/"  component={chatRoute}/>
                 </div>
             </div>
         </Router>

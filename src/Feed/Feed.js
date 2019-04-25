@@ -26,8 +26,6 @@ library.add(faComments,
             faTasks)
 
 
-
-
 function Feed() {
     return (
         <div className="feed">
@@ -46,3 +44,4 @@ function Feed() {
 }
 
 export default Feed;
+
