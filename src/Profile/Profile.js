@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import * as userActions from '../actions/userActions';
+import { connect } from 'react-redux';
 
 import EditProfile from "./EditProfile";
 import './Profile.css';
@@ -13,7 +15,14 @@ library.add(faGraduationCap,faHorse,faHeart,faPalette);
 
 
 
+
 class Profile extends Component {
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //
+  //   }
+  // }
   state = {
     redirect: false
   }
@@ -28,6 +37,10 @@ class Profile extends Component {
     }
   };
 
+  componentDidMount() {
+    this.props.getUsers();
+  }
+
   render() {
   return(
         <div className="profile-page">
@@ -37,6 +50,7 @@ class Profile extends Component {
             </div>
             <div className='profile-info'>
             <div className='basic-info'>
+
               <h2 className="text-bold">Айсауле, 22 года</h2>
               <h6>Aлматы, Казахстан</h6>
               <p className="text-bold">О себе:</p>
@@ -45,6 +59,7 @@ class Profile extends Component {
               <div className='profile-more-info'>
 
                 <ul className='one-type text-bold'>
+                  <li>{this.props.firstUser.title}</li>
                   <li><FontAwesomeIcon icon="graduation-cap" /> Образование:</li>
                   <li><FontAwesomeIcon icon="heart" /> Навыки: </li>
                   <li><FontAwesomeIcon icon="palette" /> Интересы:</li>
@@ -76,4 +91,17 @@ function profileRoute() {
     )
 }
 
-export default profileRoute;
+const mapStateToProps = (state) => ({
+  users: state.user.users,
+  firstUser: state.user.firstUser
+})
+
+const mapDispatchToProps = {
+  getUsers: userActions.getUsers,
+  createUser: userActions.createUser
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Profile);
