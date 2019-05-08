@@ -59,7 +59,7 @@ class Profile extends Component {
               <div className='profile-more-info'>
 
                 <ul className='one-type text-bold'>
-                  <li>{this.props.firstUser.title}</li>
+                  <li>{this.props.firstUser.username}</li>
                   <li><FontAwesomeIcon icon="graduation-cap" /> Образование:</li>
                   <li><FontAwesomeIcon icon="heart" /> Навыки: </li>
                   <li><FontAwesomeIcon icon="palette" /> Интересы:</li>
@@ -67,7 +67,7 @@ class Profile extends Component {
 
                 </ul>
                 <ul className='one-type'>
-                  <li>Высшее неоконченное</li>
+                  <li>Высшее неоконченное  </li>
                   <li>Готовлю беш на 30 человек</li>
                   <li>Гучи-шмучи, Пилатес,Пандора</li>
                   <li>Очень много всего</li>
@@ -79,6 +79,14 @@ class Profile extends Component {
                 <Button onClick={this.setRedirect} color='yellow'>Edit profile</Button>
                 </div>
               </div>
+              </div>
+              <div class="comment">
+              <ul className='one-type'>
+              <li>Высшее неоконченное  </li>
+              <li>Готовлю беш на 30 человек</li>
+              <li>Гучи-шмучи, Пилатес,Пандора</li>
+              <li>Очень много всего</li>
+            </ul>
             </div>
       </div>
   );
@@ -93,12 +101,14 @@ function profileRoute() {
 
 const mapStateToProps = (state) => ({
   users: state.user.users,
-  firstUser: state.user.firstUser
+  firstUser: state.user.firstUser,
+  user: state.user
 })
 
 const mapDispatchToProps = {
   getUsers: userActions.getUsers,
-  createUser: userActions.createUser
+  createUser: userActions.createUser,
+  getUser: userActions.getProfile
 }
 
 export default connect(

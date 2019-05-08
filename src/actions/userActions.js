@@ -54,3 +54,28 @@ export const createUser = (data) => (dispatch, getState) => {
     )
 
 }
+export const getProfile = (data) => (dispatch, getState) => {
+
+  dispatch({
+    type: actionTypes.ACTION_GET_POSTS_STARTED
+  })
+
+  userApi
+    .getProfile()
+    .then(
+      response => {
+        response
+          .text()
+          .then(
+            value => {
+              const user = JSON.parse(value);
+              dispatch({
+                type: actionTypes.ACTION_GET_POSTS_SUCCESS,
+                user,
+              });
+            }
+          );
+      }
+    )
+
+}

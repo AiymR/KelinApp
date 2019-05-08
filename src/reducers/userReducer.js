@@ -24,6 +24,14 @@ const firstUser = (state = {}, action) => {
   }
 }
 
+const getProfile = (state = {}, action) => {
+  switch (action.type) {
+    case actionTypes.ACTION_GET_POSTS_SUCCESS:
+      return action.data;
+    default:
+      return state;
+  }
+}
 
 const user = (state = {}, action) => {
   switch (action.type) {
@@ -35,9 +43,6 @@ const user = (state = {}, action) => {
       return state;
   }
 };
-
-
-
 
 
 const userReducer = combineReducers({

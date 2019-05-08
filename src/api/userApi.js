@@ -1,13 +1,22 @@
 
 export const getUsers = () => (
   fetch(
-    'https://jsonplaceholder.typicode.com/posts',
+    'http://localhost:3001/api/users/',
     {
       method: 'GET',
+      mode: 'cors',
     }
   )
 )
-
+export const getProfile = (data) => (
+  fetch(
+    `http://localhost:3001/api/profile/${data}/`,
+    {
+      method: 'GET',
+      mode: 'cors',
+    }
+  )
+)
 export const createUser = (data) => (
   fetch(
     'https://jsonplaceholder.typicode.com/posts',
